@@ -121,9 +121,9 @@ const App = () => {
       ) : (
         <ul>
           {team.map((fighter, index) => (
-            <li key={index} style={{ display: 'flex', alignItems: 'center' }}>
+            <li key={index} >
               <img src={fighter.img} alt={fighter.name} width="50" />
-              <div style={{ marginLeft: '10px' }}>
+              <div >
                 <p>
                   {fighter.name} - Price: ${fighter.price}, Strength: {fighter.strength}, Agility: {fighter.agility}
                 </p>
